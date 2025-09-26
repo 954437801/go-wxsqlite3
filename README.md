@@ -1,5 +1,5 @@
 # 背景
-
+fork https://github.com/Jathon-yang/go-wxsqlite3
 最近有个小项目需要用到SQLite数据库，go已经有现成的开源库可以实现，但是美中不足的是，开源版本并不支持数据库加密，这个直接在项目中使用，很明显是不行的。
 
 秉承着能不造轮子就不造轮子的原则，在网上搜寻了一下，目前比较有知名度的加密开源实现分别是：wxSQLite3和sqlcipher。其中发现sqlcipher已经有go版本的轮子可以使用了，但是集成后，生成的数据库文件并不能用Navicat打开，到Navicat官网查询后，发现Navicat默认是使用*wxSQLite3* (128-bit AES) 进行加密实现的。为了后续数据查询方便，所以决定用wxSQLite3来实现加密，然而在网上找了许久，都没发现有go版本的wxSQLite3。
@@ -14,7 +14,7 @@
 # 安装
 
 ```go
-import "github.com/Jathon-yang/go-wxsqlite3"
+import "github.com/samwafgo/go-wxsqlite3"
 ```
 
 # 使用
